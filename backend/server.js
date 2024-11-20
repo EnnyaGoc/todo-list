@@ -1,9 +1,9 @@
 const express = require('express');
 const cors = require('cors');
 
-const app = express();
+const app = express(); //serve como um framework para criar um servidor web no Node.js, facilitando a criação de rotas, manipulação de requisições HTTP e envio de respostas
 
-app.use(cors());
+app.use(cors()); //Isso habilita o CORS para todas as requisições, permitindo que o backend aceite solicitações de qualquer origem.
 app.use(express.json());
 
 const tasks = [];
